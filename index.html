@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>File Upload</title>    
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-foundation/mm-foundation.js"></script>    
+    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="js/modules/app.js"></script>    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="fileUpload" ng-controller="MyCtrl">
+      <form name="myForm" novalidate>
+        <h3>my-img-upload</h3>    
+        <my-img-upload ng-model="picFile" name="picFile"></my-img-upload>    
+        <hr>
+        <my-img-upload ng-model="picFile2" name="picFile2"></my-img-upload>
+        <br>
+        <span class="err">Form errors: {{form.$error}}</span>        
+      </form>
+      <!-- <script type="text/ng-template" id="/tpl.html">        
+      </script> -->
+    </body>
+    
+</html>
